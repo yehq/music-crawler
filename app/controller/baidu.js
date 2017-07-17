@@ -14,7 +14,7 @@ module.exports = app => {
     }
     async song() {
         const { service, ctx } = this;
-        const { id = '14927' } = ctx.query;
+        const { id } = ctx.params;
         const song = await service.baidu.getSong(id);
         ctx.body = {
             song
