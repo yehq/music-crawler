@@ -17,7 +17,7 @@ module.exports = appInfo => {
 
     security: {
       csrf: false,
-      domainWhiteList: ['localhost', 'http://localhost:8000'],
+      domainWhiteList: ['localhost', 'www.qingye.red', 'http://localhost:8000', 'http://www.qingye.red:7001', 'http://www.qingye.red:8000'],
     },
 
     view: {
